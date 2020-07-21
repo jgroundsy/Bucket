@@ -1,0 +1,33 @@
+<!--Imported HTML-->
+</html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<link href="css/toolbar.css" rel="stylesheet" type="text/css"/>
+
+<a href="index.html"><div id="headinglogo"></div></a>
+    <div id="profilelinks">
+      <p id="welcome">Welcome, guest!</p>
+      <div class="profdropdown">
+        <span class="profpic" onclick="toggleDropdown()"></span>
+        <div class="profdropdown-content">
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function toggleDropdown(){
+        var dropbtn = document.getElementsByClassName("profdropdown-content")[0];
+          
+        if (dropbtn.style.display == "none"){
+          dropbtn.style.display = "block";
+        }else if(dropbtn.style.display == "block"){
+          dropbtn.style.display = "none";
+        }else{
+          dropbtn.style.display = "block";
+        }
+      }
+    </script>
+
+  

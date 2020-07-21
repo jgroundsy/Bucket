@@ -1,0 +1,84 @@
+#toolbar{
+    position: top;
+    height:7%;
+    width:100%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-bottom: .5em;
+}
+
+#profilelinks{
+    float: right;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+#profilelinks p{
+    float:left; 
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-right: .3em;
+}
+
+
+.profpic{
+    background-image: url(../images/user/default.jpg);
+    background-color:rgb(156, 156, 156);
+    background-size:3.2em;
+    width:3.2em;
+    height:3.2em;
+    border-radius: 3.2em;
+    border-style: solid;
+    border-color: white;
+    float:right;
+    margin-right: 1em;
+}
+
+.profdropdown{
+    float:right;
+}
+
+.profdropdown-content{
+    display: none;
+    position: absolute;
+    right:0vh;
+    top:3.2em;
+    background-color: white;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.profdropdown-content a{
+
+    color: #f47c6d;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profdropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.profdropdown:hover .profdropdown-content{
+    display: block;
+}
+
+
+.profdropdown:hover .profpic{
+    background-blend-mode: soft-light;    
+    filter: drop-shadow(1px 1px 4px #222);
+}
+
+#headinglogo{
+    float:left;
+    background-image: url(../images/misc/header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 6em;
+    height: 4em;
+    margin-left: 1em;
+}
